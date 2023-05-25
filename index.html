@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="la gestion des événements sur les formulaires en javaScript"
+    />
+    <title>CHECKBOX / RADIO / SELECT en javaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <div class="input-row">
+        <h3>Quel est votre loisir préféré ?</h3>
+        <select name="entertainment" id="entertainment">
+          <option value="movies">Cinema</option>
+          <option value="music">Musique</option>
+          <option value="games">Jeux-vidéos</option>
+          <option value="sport">Sport</option>
+        </select>
+      </div>
+      <div class="input-row">
+        <h3>Vous avez adopté</h3>
+        <input type="radio" value="dog" name="animal"  id="dog">
+        <label for="dog">Un chien</label>
+        <input type="radio" value="cat" name="animal"  id="cat">
+        <label for="cat">Un chat</label>
+        <input type="radio" value="other" name="animal"  id="other">
+        <label for="other"> Autre</label>
+        <input type="radio" value="none" name="animal"  id="none">
+        <label for="none">Un chien</label>
+      </div>
+
+      <div class="input-row">
+        <h3>Conditions de ventes</h3>
+        <input type="checkbox" name="tos"  id="tos">
+        <label for="tos">J'accepte les conditions de vente</label>
+      </div>
+      <div class="input-row">
+        <button type="submit">Envoyer</button>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
