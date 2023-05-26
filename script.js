@@ -36,3 +36,21 @@
    event.preventDefault();
    console.log('Formulaire validé')
   });
+  // la methode "eventPreventDefault" permet d'eviter le comportement par default de la validation
+  // on peut déclencher la validation du formulaire manuelement avec l'automatisation de "submit":par exemple au bout de (2 sec)  
+  //pour cela on utilise  la fonction (setTimeout()):
+  setTimeout(() => {
+   form.Submit()
+  }, 2000);
+  // REMARQUE IMPORTANT :il est préférable de se passer de ce type de validation avec "submit"
+  //car les données ne sont pas vérifiées.
+
+  // si on a vraiment besoin de validation manuelle on peut opter pour une autre approche:
+
+  // on va chercher le bouton "envoyer" et on remplace le {form.submit()} par l'option{submitButton.click()};
+  
+  let submitButton = document.querySlelector('button');
+
+  setTimeout(() => {
+   submitButton.click();
+  }, 2000);
