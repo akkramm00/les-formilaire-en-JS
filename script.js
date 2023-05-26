@@ -15,7 +15,7 @@
 
  animalRadioButtons.forEach((animalRadioButton) => {
     animalRadioButton.addEventListener('change', function (event) {
-        console.log(`${event.target.id}: ${event.target.checked}`);
+        console.log(`${event.target.id}: ${event.target.checked}`);// on utilise 'id' pour spécifier chaque radio( les radios sont atchés tous par le meme 'name')
     }) ;
  });
  animalRadioButtons[3].checked = true;
@@ -27,3 +27,12 @@
 
  // on peut cocher la case par defaut en manipulant la valeur du tos:
  tos.checked = true ;
+
+ // Validation formulaire :
+  // => designation du variable :
+
+  let form = document.querySelector("form")
+  form.addEventListener('submit', (event) => {
+   event.preventDefault();
+   console.log('Formulaire validé')
+  });
